@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soma - eCommerce</title>
+  <link rel="shortcut icon" href="./assets/images/logo/soma_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="overlay" data-overlay></div>
+
+
+
+  <!-- Back to top button -->
+  <button type="button" class=" btn-floating" id="btn-back-to-top">
+    <svg style="
+        color: white;" xmlns="http://www.w3.org/2000/svg" width="36" height="46" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg>
+  </button>
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+    <!--
+    top header
+  -->
+
+    <div style="border-radius: 0px 0px 50px 50px; background-color: #252457; " class="header-main">
+      <div style="margin-top: -52px; background-color: #252457; border: none; border-bottom: .5px solid gray; " class="alert alert-primary"
+        role="alert">
+        <div  class="d-flex mt-3 justify-content-between  align-items-center ">
+          <div class="left-sec d-flex align-items-center justify-content-between">
+            <span style="color:white" class="location mx-2"> <svg style="color:white" xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+              </svg> الفروع</span>
+
+              <a href="../login/index.html"> <button style="background: #53c2c9;" class="btn text-light">تسجيل الدخول</button></a> 
+            </div>
+
+          <div class="right-sec">
+
+            <a href="#" class="header-logo d-block d-sm-none my-4  d-block d-md-none ">
+              <img src="./assets/images/logo/soma_logo.png" alt="Anon's logo" width="70" height="70">
+            </a>
+
+         <div class="d-flex">
+          <div class="d-none d-md-block">
+
+         
+          <ul class="nav " dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-current="page" href="../page-main/index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../page-about/index.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-light" href="../page-contact/index.html">تواصل معنا</a>
+            </li>
+
+          </ul>
+        </div>
+         </div>
+
+
+
+          </div>
+       
+        </div>
+
+      </div>
+      
+      <div class="container">
+
+        <div class="header-user-actions">
+
+          <button style="color: white;" class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button style="color: white;" class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button style="color: white;" class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+        <a href="#" class="header-logo d-none d-sm-none  my-4">
+          <img src="./assets/images/logo/soma_logo.png" alt="Anon's logo" width="150" height="96">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" dir="rtl" name="search" class="search-field border"
+            placeholder="أدخل اسم المنتج الذي تبحث عنه">
+
+          <button class="search-btn">
+            <ion-icon style="color:white ; font-size: 20px; font-weight: bolder;" name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/soma_logo.png" alt="Anon's logo" width="120" height="56">
+        </a>
+
+      </div>
+
+    </div>
+
+    <nav dir="rtl" class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category  px-2">
+            <a href="../page-main/index.html" class="menu-title  nav-link">الصفحة الرئيسية</a>
+          </li>
+
+
+
+          <li class="menu-category">
+            <a href="../page-mobile/index.html" class="menu-title  menu-title2 nav-link">الهواتف</a>
+
+
+          </li>
+
+          <li class="menu-category">
+            <a href="../page-tablet/index.html" class="menu-title nav-link"> الأجهزة اللوحية </a>
+          </li>
+
+          <li class="menu-category">
+            <a href="../page-accessories/index.html" class="menu-title nav-link">الاكسسوارات</a>
+
+          </li>
+
+
+          <li class="menu-category">
+            <a href="../page-offer/index.html" class="menu-title nav-link">العروض </a>
+          </li>
+
+
+
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button style="color: black;" class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="person-outline"></ion-icon>
+      </button>
+
+
+
+
+    </div>
+
+    <nav dir="rtl" class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 style="font-size: 16px; color: #53c2c9;" class="menu-title">القائمة</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="../page-main/index.html" class="menu-title">الصفحة الرئيسية</a>
+        </li>
+
+
+        <li class="menu-category">
+          <a href="../page-mobile/index.html" class="menu-title">الهواتف</a>
+
+
+        </li>
+
+        <li class="menu-category">
+          <a href="../page-tablet/index.html" class="menu-title "> الأجهزة اللوحية </a>
+        </li>
+
+        <li class="menu-category">
+          <a href="../page-accessories/index.html" class="menu-title ">الاكسسوارات</a>
+
+        </li>
+
+
+        <li class="menu-category">
+          <a href="../page-offer/index.html" class="menu-title ">العروض </a>
+        </li>
+
+        
+        <li class="menu-category">
+          <a href="../page-about/" class="menu-title ">من نحن </a>
+        </li>
+
+        
+        <li class="menu-category">
+          <a href="../page-contact/" class="menu-title ">تواصل معنا </a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <div class="animation">
+
+    <!--
+    - MAIN
+  -->
+
+    <main>
+
+      <!--
+      - BANNER
+    -->
+
+    <div class="container-fuild mt-2">
+      <div id="carouselExampleCaptions" class="carousel slide">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/Soma/Home page/Choose Phone page/1440-607 -3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 class="fw-bold ">اختر هاتفك الان </h5>
+        
+            </div>
+          </div>
+    
+        </div>
+ 
+      </div>
+    </div>
+
+
+
+
+
+      <!--
+      - PRODUCT
+    -->
+
+      <div  class="container ">
+
+
+        <div class="product-container pt-5 mt-5">
+
+          <div class="container flex-row-reverse ">
+
+
+            <div class="product-box">
+
+
+
+
+
+
+
+
+
+              <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+            <div class="d-flex flex-row-reverse justify-content-between">
+              <h2 class="title" dir="rtl">الهواتف </h2>
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option class="fs-5" selected disabled>تنقية </option>
+                  <option value="1">أعلي سعر </option>
+                  <option value="2">أقل سعر </option>
+                  <option value="3">أعلي تقييم</option>
+                </select>
+                <label for="floatingSelect"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-filter-circle-fill text-success mb-1" viewBox="0 0 16 16">
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM3.5 5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z" />
+                  </svg> Filters</label>
+              </div>
+            </div>
+
+
+            <div dir="rtl" class="product-grid">
+
+
+              <div class="showcase ">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category nav-link">ساعة ذكية</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title  nav-link">ساعة رياضية ديجيتال ذكية للجنسين </a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">100 ريال</p>
+                    <del>120 ريال </del>
+                    <div>
+                      <button style="background-color: #252457; border-radius: 100px;"  class="btn fs-7 text-light buuton-buy  "> 
+
+                        
+                        <svg style="    margin-left: -1.2px;  margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"   d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />  </svg> 
+                    
+                    </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+              <div class="showcase ">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category nav-link">ساعة ذكية</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title  nav-link">ساعة رياضية ديجيتال ذكية للجنسين </a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">100 ريال</p>
+                    <del>120 ريال </del>
+                    <div>
+                      <button style="background-color: #252457; border-radius: 100px;"  class="btn fs-7 text-light buuton-buy  "> 
+
+                        
+                        <svg style="    margin-left: -1.2px;  margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"   d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />  </svg> 
+                    
+                    </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="showcase ">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category nav-link">ساعة ذكية</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title  nav-link">ساعة رياضية ديجيتال ذكية للجنسين </a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">100 ريال</p>
+                    <del>120 ريال </del>
+                    <div>
+                      <button style="background-color: #252457; border-radius: 100px;"  class="btn fs-7 text-light buuton-buy  "> 
+
+                        
+                        <svg style="    margin-left: -1.2px;  margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"   d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />  </svg> 
+                    
+                    </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="showcase ">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category nav-link">ساعة ذكية</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title  nav-link">ساعة رياضية ديجيتال ذكية للجنسين </a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">100 ريال</p>
+                    <del>120 ريال </del>
+                    <div>
+                      <button style="background-color: #252457; border-radius: 100px;"  class="btn fs-7 text-light buuton-buy  "> 
+
+                        
+                        <svg style="    margin-left: -1.2px;  margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"   d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />  </svg> 
+                    
+                    </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="showcase ">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category nav-link">ساعة ذكية</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title  nav-link">ساعة رياضية ديجيتال ذكية للجنسين </a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">100 ريال</p>
+                    <del>120 ريال </del>
+                    <div>
+                      <button style="background-color: #252457; border-radius: 100px;"  class="btn fs-7 text-light buuton-buy  "> 
+
+                        
+                        <svg style="    margin-left: -1.2px;  margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"   d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />  </svg> 
+                    
+                    </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="showcase ">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus"
+                    class="product-img hover" width="300">
+
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category nav-link">ساعة ذكية</a>
+
+                  <h3>
+                    <a href="#" class="showcase-title  nav-link">ساعة رياضية ديجيتال ذكية للجنسين </a>
+                  </h3>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">100 ريال</p>
+                    <del>120 ريال </del>
+                    <div>
+                      <button style="background-color: #252457; border-radius: 100px;"  class="btn fs-7 text-light buuton-buy  "> 
+
+                        
+                        <svg style="    margin-left: -1.2px;  margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="26" height="26"  fill="currentColor" class="bi bi-bag-plus-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"   d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />  </svg> 
+                    
+                    </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+      </main>
+
+   
+
+
+          <!--
+    - FOOTER
+  -->
+  <footer dir="rtl">
+
+
+
+    <div class="footer-nav d-flex flex-column-reverse flex-md-row">
+
+      <div class="container" style="
+      width: 808px;
+      margin-right: 5px;
+  ">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">الأقسام </h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">الهواتف</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">الاكسسوارات</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">التخفيضات</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">العروض</a>
+          </li>
+
+
+
+        </ul>
+
+
+
+        <ul  class="footer-nav-list edit">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">شركتنا </h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">من نحن</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link"> تواصل معنا</a>
+          </li>
+
+
+        </ul>
+
+      
+
+        <ul  class="footer-nav-list edit">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">للتواصل</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content ">
+              Palestine street, Jeddah, Saudi Arabia
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a dir="ltr" href="https://wa.link/pennls
+          " class="footer-nav-link">+966 56 188 2290
+            </a>
+          </li>
+
+          <li class="footer-nav-item   ">
+          
+
+            <div class="flex flex-column">
+              <a href="mailto:Info@soma-shop.com" class="footer-nav-link one-line d-flex flex-row-reverse  align-items-center ">Info@soma-shop.com   <ion-icon style="color: #6c757d;font-size: 25px;margin-left: 9px;"  name="mail-outline"></ion-icon></a>
+            </div>
+
+          
+<div style="
+display: flex;
+align-items: center;
+gap: 20px;
+/* font-size: 30px; */
+" class="social mt-4">
+<a href="#" class="footer-nav-link">
+  <ion-icon style="font-size: 35px;" name="logo-facebook"></ion-icon>
+</a>
+<a href="#" class="footer-nav-link">
+  <ion-icon style="font-size: 35px;" name="logo-whatsapp"></ion-icon>
+</a>
+<a href="#" class="footer-nav-link">
+  <ion-icon style="font-size: 35px;" name="logo-instagram"></ion-icon>
+</a>
+</div>
+          </li>
+
+
+        </ul>
+        
+        <ul class="footer-nav-list">
+
+
+
+  
+
+        </ul>
+
+        
+
+      </div>
+
+
+<div  class="left-sec-footer d-flex flex-column align-items-center">
+<a href=""><img style="width: 150px;" src="assets/images/logo/soma_logo.png" alt="soma" class="img"></a>
+<p style="
+
+padding: 40px;
+text-align: center;
+box-sizing: border-box;
+" class="text-light">مرحبًا بك في سوما، المكان الأمثل للعثور على أفضل <span style="color: #53c2c9;">اكسسوارات</span> المحمول
+التي تلبي جميع احتياجاتك. سواء كنت تبحث عن <span style="color: #53c2c9;">حافظة</span> أنيقة لهاتفك الذكي،
+أو <span style="color: #53c2c9;">سماعات</span> عالية الجودة لاستماع الموسيقى، أو <span style="color: #53c2c9;">شاحن</span> سريع للحفاظ على بطارية
+هاتفك مشحونة طوال الوقت، فإننا نقدم لك تشكيلة واسعة من الاكسسوارات 
+المبتكرة والعصرية.
+</p>
+</div>
+
+
+
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          &copy; <a href="#" class="nav-link">Soma Store Online </a> جميع الحقوق محفوظه
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+    </div>
+
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+</body>
+</html>
