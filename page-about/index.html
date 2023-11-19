@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soma - eCommerce</title>
+  <link rel="shortcut icon" href="./assets/images/logo/soma_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <style>
+      .nav-item
+      {
+        display: inline-block;
+      }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+  <div class="overlay" data-overlay></div>
+
+
+
+  <!-- Back to top button -->
+  <button type="button" class=" btn-floating" id="btn-back-to-top">
+    <svg style="
+        color: white;" xmlns="http://www.w3.org/2000/svg" width="36" height="46" fill="currentColor"
+      class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg>
+  </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+    <!--
+    top header
+  -->
+
+    <div style="border-radius: 0px 0px 50px 50px; background-color: #252457; " class="header-main">
+      <div style="margin-top: -52px; background-color: #252457; border: none; border-bottom: .5px solid gray; " class="alert alert-primary"
+        role="alert">
+        <div  class="d-flex mt-3 justify-content-between  align-items-center ">
+          <div class="left-sec d-flex align-items-center justify-content-between">
+            <span style="color:white" class="location mx-2"> <svg style="color:white" xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+              </svg> الفروع</span>
+
+              <a href="../login/index.html"> <button style="background: #53c2c9;" class="btn text-light">تسجيل الدخول</button></a> 
+            </div>
+
+          <div class="right-sec">
+
+            <a href="#" class="header-logo d-block d-sm-none my-4  d-block d-md-none ">
+              <img src="./assets/images/logo/soma_logo.png" alt="Anon's logo" width="70" height="70">
+            </a>
+
+         <div class="d-flex">
+          <div class="d-none d-md-block">
+
+         
+          <ul class="nav " dir="rtl">
+            <li class="nav-item">
+              <a class="nav-link text-light " aria-current="page" href="../page-main/index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #53c2c9;" class="nav-link" href="../page-about/index.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link text-light " href="../page-contact/index.html">تواصل معنا</a>
+            </li>
+
+          </ul>
+        </div>
+         </div>
+
+
+
+          </div>
+       
+        </div>
+
+      </div>
+      
+      <div class="container">
+
+        <div class="header-user-actions">
+
+          <button style="color: white;" class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button style="color: white;" class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button style="color: white;" class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+        <a href="#" class="header-logo d-none d-sm-none  my-4">
+          <img src="./assets/images/logo/soma_logo.png" alt="Anon's logo" width="150" height="96">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" dir="rtl" name="search" class="search-field border"
+            placeholder="أدخل اسم المنتج الذي تبحث عنه">
+
+          <button class="search-btn">
+            <ion-icon style="color:white ; font-size: 20px; font-weight: bolder;" name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/soma_logo.png" alt="Anon's logo" width="120" height="56">
+        </a>
+
+      </div>
+
+    </div>
+
+    <nav dir="rtl" class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="../page-main/index.html" class="menu-title nav-link">الصفحة الرئيسية</a>
+          </li>
+  
+  
+          <li class="menu-category">
+            <a href="../page-mobile/index.html" class="menu-title nav-link">الهواتف</a>
+  
+  
+          </li>
+  
+          <li class="menu-category">
+            <a href="../page-tablet/index.html" class="menu-title nav-link "> الأجهزة اللوحية </a>
+          </li>
+  
+          <li class="menu-category">
+            <a href="../page-accessories/index.html" class="menu-title nav-link ">الاكسسوارات</a>
+  
+          </li>
+  
+  
+          <li class="menu-category">
+            <a href="../page-offer/index.html" class="menu-title nav-link ">العروض </a>
+          </li>
+  
+
+  
+        </ul>
+
+
+
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button style="color: black;" class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="person-outline"></ion-icon>
+      </button>
+
+
+
+
+    </div>
+
+    <nav dir="rtl" class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 style="font-size: 16px; color: #53c2c9;" class="menu-title">القائمة</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="../page-main/index.html" class="menu-title">الصفحة الرئيسية</a>
+        </li>
+
+
+        <li class="menu-category">
+          <a href="../page-mobile/index.html" class="menu-title">الهواتف</a>
+
+
+        </li>
+
+        <li class="menu-category">
+          <a href="../page-tablet/index.html" class="menu-title "> الأجهزة اللوحية </a>
+        </li>
+
+        <li class="menu-category">
+          <a href="../page-accessories/index.html" class="menu-title ">الاكسسوارات</a>
+
+        </li>
+
+
+        <li class="menu-category">
+          <a href="../page-offer/index.html" class="menu-title ">العروض </a>
+        </li>
+
+        
+        <li class="menu-category">
+          <a href="../page-about/" class="menu-title ">من نحن </a>
+        </li>
+
+        
+        <li class="menu-category">
+          <a href="../page-contact/" class="menu-title ">تواصل معنا </a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <div class="animation">
+
+    <!--
+    - MAIN
+  -->
+
+    <main>
+
+      <!--
+      - BANNER
+    -->
+
+    <div class="container-fuild mt-2">
+      <div id="carouselExampleCaptions" class="carousel slide">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  src="assets/images/Soma/Home page/Who we are page/1440-607.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1 style="font-size: 50px;" class="fw-bold  ">من نحن </h1>
+
+            </div>
+          </div>
+
+        </div>
+ 
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<div class="container first-dev text-end border-bottom pb-4 d-flex flex-column flex-column-reverse align-items-center flex-md-row-reverse gap-5 justify-content-between mt-5">
+  <div class="left-sec-texts text-end">
+    <h3 class="fw-bold">رؤيتنا</h3>
+    <p style="
+    width: 500px;
+">
+      نحن في سوما نؤمن بأن الهواتف المحمولة واكسسواراتها تلعب دورًا حاسمًا 
+      في حياتنا اليومية. لذا، نسعى جاهدين لتوفير تشكيلة واسعة من المنتجات عالية 
+      الجودة والمبتكرة التي تعزز تجربة استخدام الهواتف المحمولة وتعكس أناقة 
+      وشخصية المستخدم.</p>
+  </div>
+  <div class="right-sec-texts text-end">
+<img style="width: 250px; height: 250px; border-radius: 100%;" src="assets/images/Ellipse 22222.png" alt="" srcset="">
+  </div>
+  
+</div>
+
+
+
+<div class="container first-dev text-end border-bottom pb-4 d-flex flex-column flex-column-reverse align-items-center flex-md-row gap-5 justify-content-between mt-5">
+  <div class="left-sec-texts text-end">
+    <h3 class="fw-bold">ما نقدمه</h3>
+    <p style="
+    width: 500px;
+">
+
+في سوما، نقدم مجموعة شاملة من اكسسوارات المحمول والهواتف الذكية
+ بأعلى جودة. من حافظات الهواتف الأنيقة والواقيات للشاشة إلى سماعات 
+البلوتوث والشواحن السريعة وغيرها الكثير، نحرص على تلبية احتياجات جميع
+ المستخدمين.</p>
+  </div>
+  <div class="right-sec-texts text-end">
+<img style="width: 250px; height: 250px; border-radius: 100%;" src="assets/images/Ellipse 23.png" alt="" srcset="">
+  </div>
+  
+</div>
+
+
+<div class="container first-dev text-end border-bottom pb-4 d-flex flex-column flex-column-reverse align-items-center flex-md-row-reverse gap-5 justify-content-between mt-5">
+  <div class="left-sec-texts text-end">
+    <h3 class="fw-bold">جودة المنتج</h3>
+    <p style="
+    width: 500px;
+">
+   
+نحن نضع الجودة في صلب ما نقدمه. نقوم بتحديد المنتجات من العلامات التجارية 
+الرائدة والموثوقة في صناعة الهواتف المحمولة واكسسواراتها. نتأكد من أن جميع
+ المنتجات التي نعرضها تلبي معايير الجودة العالية وتضمن أداءًا ممتازًا ومتانة طويلة
+ الأمد.</p>
+  </div>
+  <div class="right-sec-texts text-end">
+<img style="width: 250px; height: 250px; border-radius: 100%;" src="assets/images/Ellipse 24.png" alt="" srcset="">
+  </div>
+  
+</div>
+
+
+<div class="container first-dev text-end  pb-4 mb-4 d-flex flex-column flex-column-reverse align-items-center flex-md-row gap-5 justify-content-between mt-5">
+  <div class="left-sec-texts text-end">
+    <h3 class="fw-bold">خدمة العملاء </h3>
+    <p style="
+    width: 500px;
+">
+   
+
+   في سوما، نضع رضا العملاء في صميم أولوياتنا. نحن نسعى جاهدين لتقديم 
+   تجربة تسوق مميزة وسلسة لعملائنا. فريق خدمة العملاء لدينا متفانٍ في
+    مساعدتك، ونقدم دعمًا فنيًا متفوقًا وإجابة على استفساراتك بسرعة وفاعلية.</p>
+  </div>
+  <div class="right-sec-texts text-end">
+<img style="width: 250px; height: 250px; border-radius: 100%;" src="assets/images/Ellipse 25.png" alt="" srcset="">
+  </div>
+  
+</div>
+
+
+    <!--
+    - FOOTER
+  -->
+
+  <footer dir="rtl">
+
+
+
+    <div class="footer-nav d-flex flex-column-reverse flex-md-row">
+
+      <div class="container" style="
+      width: 808px;
+      margin-right: 5px;
+  ">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">الأقسام </h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">الهواتف</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">الاكسسوارات</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">التخفيضات</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">العروض</a>
+          </li>
+
+
+
+        </ul>
+
+
+
+        <ul  class="footer-nav-list edit">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">شركتنا </h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">من نحن</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link"> تواصل معنا</a>
+          </li>
+
+
+        </ul>
+
+      
+
+        <ul  class="footer-nav-list edit">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">للتواصل</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content ">
+              Palestine street, Jeddah, Saudi Arabia
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a dir="ltr" href="https://wa.link/pennls
+          " class="footer-nav-link">+966 56 188 2290
+            </a>
+          </li>
+
+          <li class="footer-nav-item   ">
+          
+
+            <div class="flex flex-column">
+              <a href="mailto:Info@soma-shop.com" class="footer-nav-link one-line d-flex flex-row-reverse  align-items-center ">Info@soma-shop.com   <ion-icon style="color: #6c757d;font-size: 25px;margin-left: 9px;"  name="mail-outline"></ion-icon></a>
+            </div>
+
+          
+<div style="
+display: flex;
+align-items: center;
+gap: 20px;
+/* font-size: 30px; */
+" class="social mt-4">
+<a href="#" class="footer-nav-link">
+  <ion-icon style="font-size: 35px;" name="logo-facebook"></ion-icon>
+</a>
+<a href="#" class="footer-nav-link">
+  <ion-icon style="font-size: 35px;" name="logo-whatsapp"></ion-icon>
+</a>
+<a href="#" class="footer-nav-link">
+  <ion-icon style="font-size: 35px;" name="logo-instagram"></ion-icon>
+</a>
+</div>
+          </li>
+
+
+        </ul>
+        
+        <ul class="footer-nav-list">
+
+
+
+  
+
+        </ul>
+
+        
+
+      </div>
+
+
+<div  class="left-sec-footer d-flex flex-column align-items-center">
+<a href=""><img style="width: 150px;" src="assets/images/logo/soma_logo.png" alt="soma" class="img"></a>
+<p style="
+
+padding: 40px;
+text-align: center;
+box-sizing: border-box;
+" class="text-light">مرحبًا بك في سوما، المكان الأمثل للعثور على أفضل <span style="color: #53c2c9;">اكسسوارات</span> المحمول
+التي تلبي جميع احتياجاتك. سواء كنت تبحث عن <span style="color: #53c2c9;">حافظة</span> أنيقة لهاتفك الذكي،
+أو <span style="color: #53c2c9;">سماعات</span> عالية الجودة لاستماع الموسيقى، أو <span style="color: #53c2c9;">شاحن</span> سريع للحفاظ على بطارية
+هاتفك مشحونة طوال الوقت، فإننا نقدم لك تشكيلة واسعة من الاكسسوارات 
+المبتكرة والعصرية.
+</p>
+</div>
+
+
+
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          &copy; <a href="#" class="nav-link">Soma Store Online </a> جميع الحقوق محفوظه
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+  </script>
+</body>
+
+</html>
